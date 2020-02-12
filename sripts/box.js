@@ -19,7 +19,7 @@ function Box(x, y, W, H = box_h) {
     this.move = function () {
         if (this.m) {
             this.x += v;
-            if (this.x > w + this.w || this.x < -this.w) {
+            if (this.x > w || this.x < -this.w) {
                 v = -v;
             }
         }

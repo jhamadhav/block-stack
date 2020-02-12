@@ -111,12 +111,11 @@ function updating_score() {
         if (typeof (Storage) !== undefined) {
             localStorage.best_scored = "" + best + "";
         }
-        if (best < 10) {
-            s.innerText = '0' + best;
-        } else {
-            s.innerText = best;
-        }
-
+    }
+    if (best < 10) {
+        b.innerText = '0' + best;
+    } else {
+        b.innerText = best;
     }
 
 }
